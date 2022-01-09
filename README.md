@@ -1,5 +1,5 @@
 # AutoComplete
 
-## Este projeto é um pequeno autocomplete realizado em javascript
+## Este projeto é um pequeno projeto de autocomplete realizado em javascript
 
 
