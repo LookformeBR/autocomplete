@@ -1,3 +1,4 @@
+// Lista de Sugestões
 let suggestions = [
     "Programação",
     "Programador",

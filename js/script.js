@@ -1,4 +1,4 @@
-// getting all required elements
+// obtendo todos os elementos necessários
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
 const suggBox = searchWrapper.querySelector(".autocom-box");
@@ -6,9 +6,9 @@ const icon = searchWrapper.querySelector(".icon");
 let linkTag = searchWrapper.querySelector("a");
 let webLink;
 
-// if user press any key and release
+// se o usuário pressionar qualquer tecla e soltar
 inputBox.onkeyup = (e)=>{
-    let userData = e.target.value; //user enetered data
+    let userData = e.target.value;// dados inseridos pelo usuário
     let emptyArray = [];
     if(userData){
         icon.onclick = ()=>{
@@ -17,11 +17,11 @@ inputBox.onkeyup = (e)=>{
             linkTag.click();
         }
         emptyArray = suggestions.filter((data)=>{
-            //filtering array value and user characters to lowercase and return only those words which are start with user enetered chars
+        // filtrar o valor da matriz e os caracteres do usuário para minúsculas e retornar apenas as palavras que começam com os caracteres inseridos pelo usuário
             return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
         });
         emptyArray = emptyArray.map((data)=>{
-            // passing return data inside li tag
+          // passando dados de retorno dentro da tag li
             return data = `<li>${data}</li>`;
         });
         searchWrapper.classList.add("active"); //show autocomplete box
@@ -32,7 +32,7 @@ inputBox.onkeyup = (e)=>{
             allList[i].setAttribute("onclick", "select(this)");
         }
     }else{
-        searchWrapper.classList.remove("active"); //hide autocomplete box
+        searchWrapper.classList.remove("active"); // adicionando o atributo onclick em todas as tags li
     }
 }
 
