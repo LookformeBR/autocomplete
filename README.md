@@ -1,5 +1,5 @@
 # AutoComplete
 
-## Este projeto é um pequeno autocomplete realizado em javascript
+## Uma barra de pesquisa simples que oferece sugestões
 
 
